@@ -6,7 +6,7 @@ This directory contains the Quartus Project for the Intel® Agilex™ 7 PCIe Roo
 
 - Intel® Quartus Prime (See Release Notes for the supported version)
 - Supported Board:
-  - (https://www.intel.com/content/www/us/en/products/details/fpga/development-kits/agilex/si-agf014.html)
+  - (https://www.altera.com/products/devkit/a1jui0000061r0pmaq/agilex-7-fpga-f-series-transceiver-soc-development-kit-p-tile-and-e-tile)
 
 # Build Steps
 

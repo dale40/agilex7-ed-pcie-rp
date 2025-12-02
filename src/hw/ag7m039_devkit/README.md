@@ -6,8 +6,7 @@ This directory contains the Quartus Project for the Intel® Agilex™ 7 PCIe Roo
 
 - Intel® Quartus Prime (See Release Notes for the supported version)
 - Supported Board:
-  - [Intel® Agilex™ 7 FPGA M-Series Development Kit - HBM2e Edition (3x F-Tile & 1x R-Tile)](https://www.intel.com/content/www/us/en/products/details/fpga/development-kits/agilex/agm039.html)
-
+  - (https://www.altera.com/products/devkit/a1jui0000049utqmam/agilex-7-fpga-m-series-development-kit-hbm2e-edition-3x-f-tile-1x-r-tile-es)
 # Build Steps
 
  1. Compile design and generate configuration file:
