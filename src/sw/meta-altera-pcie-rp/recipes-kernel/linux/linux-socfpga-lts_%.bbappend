@@ -10,6 +10,23 @@ SRC_URI:append:agilex7_dk_dev_agm039fes = " \
 	${@bb.utils.contains("IMAGE_TYPE", "rped", "file://nvme.scc", "", d)} \
 	${@bb.utils.contains("IMAGE_TYPE", "rped", "file://fit_kernel_agilex7_dk_dev_agm039fes_rped.its", "", d)} \
 	${@bb.utils.contains("IMAGE_TYPE", "rped", "file://0001-PCI-altera-set-maximum-supported-TLP-data-payload-si.patch", "", d)} \
+	${@bb.utils.contains("IMAGE_TYPE", "rped", "file://0002-Reserved-RAM-area-required-by-pcie-rootport-on-FPGA.patch", "", d)} \
+	"
+
+SRC_URI:append:agilex7_dk_si_agi027fc = " \
+	${@bb.utils.contains("IMAGE_TYPE", "gsrd", "file://nvme.scc", "", d)} \
+	${@bb.utils.contains("IMAGE_TYPE", "gsrd", "file://fit_kernel_agilex7_dk_si_agi027fc_gsrd.its", "", d)} \
+	${@bb.utils.contains("IMAGE_TYPE", "gsrd", "file://0001-PCI-altera-set-maximum-supported-TLP-data-payload-si.patch", "", d)} \
+	${@bb.utils.contains("IMAGE_TYPE", "gsrd", "file://0002-Reserved-RAM-area-required-by-pcie-rootport-on-FPGA.patch", "", d)} \
+	"
+
+SRC_URI:append:agilex7_dk_si_agf014eb = " \
+	${@bb.utils.contains("IMAGE_TYPE", "gsrd", "file://nvme.scc", "", d)} \
+	${@bb.utils.contains("IMAGE_TYPE", "gsrd", "file://fit_kernel_agilex7_dk_si_agf014eb_gsrd.its", "", d)} \
+	${@bb.utils.contains("IMAGE_TYPE", "gsrd", "file://0001-PCI-altera-set-maximum-supported-TLP-data-payload-si.patch", "", d)} \
+	${@bb.utils.contains("IMAGE_TYPE", "gsrd", "file://0002-Reserved-RAM-area-required-by-pcie-rootport-on-FPGA.patch", "", d)} \
+	${@bb.utils.contains("IMAGE_TYPE", "gsrd", "file://0003-DTS-Add-node-to-support-pcie-legacy-interrupts.patch", "", d)} \
+	${@bb.utils.contains("IMAGE_TYPE", "gsrd", "file://0004-Add-PCIe-RP-driver-support-for-Legacy-INTx-interrupts.patch", "", d)} \
 	"
 
 do_deploy:append() {
@@ -22,7 +39,7 @@ do_deploy:append() {
 	# core.rbf
 	cp ${DEPLOY_DIR_IMAGE}/${MACHINE}_${IMAGE_TYPE}_ghrd/ghrd.core.rbf ${B}
 
-	cp ${WORKDIR}/fit_kernel_${MACHINE}_${IMAGE_TYPE}.its ${B}
+	cp ${WORKDIR}/sources-unpack/fit_kernel_${MACHINE}_${IMAGE_TYPE}.its ${B}
 
 	# Image
 	cp ${LINUXDEPLOYDIR}/Image ${B}
