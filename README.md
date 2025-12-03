@@ -1,6 +1,6 @@
 # Intel® Agilex™ 7 PCIe Root Port System Example Design
 
-This system example design demonstrates a PCIe root port.
+This system example design demonstrates a PCIe root port.The design package includes three distinct variants(P/F/R-tile), each tailored to different system requirements and use cases.These variants showcase various configuration features, enabling users to select the most appropriate design for their specific application. 
 ## Description
 
 The PCIe root port example design is based on the Intel® Agilex™ 7 Golden System Reference Design (GSRD) with the following components added:
