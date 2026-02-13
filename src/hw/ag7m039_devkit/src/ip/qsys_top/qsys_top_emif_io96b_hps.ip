@@ -1528,11 +1528,6 @@ https://fpgasoftware.intel.com/eula.-->
                 <ipxact:displayName>tMRW</ipxact:displayName>
                 <ipxact:value>5.0</ipxact:value>
               </ipxact:parameter>
-              <ipxact:parameter parameterId="CTRL_BG_ROTATE_EN" type="string">
-                <ipxact:name>CTRL_BG_ROTATE_EN</ipxact:name>
-                <ipxact:displayName>Bank Group Rotation</ipxact:displayName>
-                <ipxact:value>2</ipxact:value>
-              </ipxact:parameter>
               <ipxact:parameter parameterId="MEM_WR_POSTAMBLE_MODE" type="real">
                 <ipxact:name>MEM_WR_POSTAMBLE_MODE</ipxact:name>
                 <ipxact:displayName>Write Postamble Mode</ipxact:displayName>
@@ -1572,11 +1567,6 @@ https://fpgasoftware.intel.com/eula.-->
                 <ipxact:name>TURNAROUND_W2R_DIFFCS_CYC</ipxact:name>
                 <ipxact:displayName>Additional write-to-read turnaround time (different ranks)</ipxact:displayName>
                 <ipxact:value>0</ipxact:value>
-              </ipxact:parameter>
-              <ipxact:parameter parameterId="CTRL_PERFORMANCE_PROFILE" type="string">
-                <ipxact:name>CTRL_PERFORMANCE_PROFILE</ipxact:name>
-                <ipxact:displayName>Controller Performance Profile</ipxact:displayName>
-                <ipxact:value>SEQ</ipxact:value>
               </ipxact:parameter>
               <ipxact:parameter parameterId="MEM_ODT_DQ_X_TGT_WR" type="string">
                 <ipxact:name>MEM_ODT_DQ_X_TGT_WR</ipxact:name>
