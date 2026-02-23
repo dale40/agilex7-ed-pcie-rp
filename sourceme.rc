@@ -1,3 +1,4 @@
 export QUARTUS_ROOTDIR=/tools/intel-quartus-25.1.1/quartus/
 export VCS_ARCH_OVERRIDE=linux
+export PATH=/tools/intel-quartus-25.1.1/quartus/bin:$PATH
 alias vcs='vcs -full64'
